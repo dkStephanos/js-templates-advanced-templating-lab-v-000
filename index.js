@@ -22,11 +22,6 @@ function createRecipe() {
   var template = Handlebars.compile(document.getElementById("recipe-template").innerHTML);
   let recipeInfo = getRecipeInfo();
   let name = document.getElementById("name").innerHTML;
-  if (name) {
-    console.log(name)
-  } else {
-    console.log("fuck....")
-  }
   console.log(recipeInfo)
   var result = template(recipeInfo);
   document.getElementById("main").innerHTML = result;
