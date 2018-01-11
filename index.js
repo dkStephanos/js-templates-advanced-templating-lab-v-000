@@ -37,7 +37,7 @@ function getRecipeInfo() {
   let ingredients = document.getElementsByName("ingredients");
   let ingredientNames = [];
   for(let i = 0; i < ingredients.length; i++) {
-    ingredientNames << ingredients[i].value
+    ingredientNames.push(ingredients[i].value)
   }
   return {"name": name, "description": description, "ingredients": ingredientNames}
 }
