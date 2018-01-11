@@ -21,7 +21,6 @@ function displayEditForm() {
 function createRecipe() {
   var template = Handlebars.compile(document.getElementById("recipe-template").innerHTML);
   let recipeInfo = getRecipeInfo();
-  let name = document.getElementById("name").innerHTML;
   console.log(recipeInfo)
   var result = template(recipeInfo);
   document.getElementById("main").innerHTML = result;
