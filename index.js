@@ -34,6 +34,6 @@ function updateRecipe() {
 function getRecipeInfo() {
   let name = document.getElementById("name").value;
   let description = document.getElementById("description").value;
-  let ingredients = document.getElementsByName("ingredients").innerHTML;
+  let ingredients = document.getElementsByName("ingredients");
   return {"name": name, "description": description, "ingredients": ingredients}
 }
