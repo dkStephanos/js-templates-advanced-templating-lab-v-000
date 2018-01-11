@@ -35,6 +35,5 @@ function getRecipeInfo() {
   let name = document.getElementById("name").innerHTML;
   let description = document.getElementById("description").innerHTML;
   let ingredients = document.getElementsByName("ingredients").innerHTML;
-  console.log(name)
   return {"name": name, "description": description, "ingredients": ingredients}
 }
